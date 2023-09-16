@@ -1,41 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mining Chatbot</title>
+    <title>Webpage Design</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(p1.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon {
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo {
+    color: #f7e5d1;
+    padding-left: 20px;
+    padding-top: 20px;
+    float: left;
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 50px;
+    margin-top: 27px;
+    font-size: 15px;
+}
+ul li a{
+    text-decoration: none;
+    color: #f7e5d1;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+    color: #b3622c;
+}
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+.srch{
+    font-family: 'Times New Roman', Times, serif;
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #f7e5d1;
+    margin-top: 13px;
+    color: azure;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #f7e5d1;
+    border: 2px solid #f7e5d1;
+    margin-top: 13px;
+    color: BLACK;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+.btn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline: none;
+}
+.content{
+    width: 1150px;
+    height: auto;
+    margin: auto;
+    color: #e09540;
+    position: relative;
+}
+.content .par{
+    padding-left: 4px;
+    padding-top: 22px;
+    padding-bottom: 25px;
+    /* padding-right: 20px; */
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1.2px;
+    line-height: 40px;
+    margin-right: 465px;
+}
+.content h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    padding-left: 4px;
+    margin-top: 10%;
+    letter-spacing: 4px;
+}
+.content .cn{
+    width: 200px;
+    height: 60px;
+    background-color: #f7e5d1;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    /* color: black; */
+    transition: .4s ease;
+}
+.content .cn a{
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+}
+.cn:hover{
+    background-color: #b3622c;
+}
+
+.form{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top,rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: -68px;
+    left: 835px;
+    border-radius: 10px;
+    padding: 25px;
+}
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #cfa372;
+    font-size: 22px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: #cfa372 1px solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+.form input:focus{
+    outline: none;
+}
+::placeholder{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: #f7e5d1;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: 0.4s ease;
+}
+.btnn:hover{
+    background: #b3622c;
+    color: black;
+}
+.btnn a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    padding-top: 20px;
+    text-align: center;
+
+}
+.form .link a{
+    text-decoration: none;
+    color: #f7e5d1;
+}
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+.icons a{
+    text-decoration: none;
+    color: white;
+}
+
+.icon a ion-icon{
+    color: white;
+    font-size: 20px;
+    margin-right: 5px;
+    padding-left: 2px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+    margin: 7px;
+}
+.icon ion-icon:hover{
+    color: #b3622c;
+} 
+    </style>
 </head>
+
 <body>
-    <header class="header">
-        <a href="#" class="logo">
-            <img src="logo1.png" alt="" height="60cm" width="60cm">
-        </a>
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#About">About</a>
-            <a href="#Feedback">Feedback</a>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">
+                    <img src="logo1.png" alt="" height="70cm" width="80cm">
+                </h2>
+            </div>
 
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">FEEDBACK</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
 
-        </nav>
-        <div class="icons">
-            <div class="fas fa-search" id="search-btn"></div>
-            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type text">
+                <a href="#"><button class="btn">Search</button></a>
+            </div>
         </div>
-    </header>
-    
 
+        <div class="content">
+            <h1> MINERBOT</h1>
+            <p class="par">Hello! I'm your friendly bot, here to assist you with any questions or tasks you have. Just let me know how I can help, and I'll do my best to provide you with the information or guidance you need.</p>
+            <button class="cn"><a href="#">Need help? Ask our bot.</a></button>
+            <div class="form">
+                <h2>Login here</h2>
+                <input type="email" name="email" placeholder="Enter your Email">
+                <input type="password" name="" placeholder="Enter Password">
+                <button class="btnn"><a href="#">Login</a></button>
+                <p class="link">Don't have an account?<br>
+                <a href="signup.html">Sign up</a> here.</p>
+                <p class="liw">Log in with</p>
 
+                <div class="icon">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                </div>
+            </div>
+        </div>
 
-
-
-
-
-
-
-    <!-- js file -->
-    <script src="js/script.js"></script>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
+
 </html>

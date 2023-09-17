@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About Us Section</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="The MinerBot is a chatbot that can answer your questions about mining industry acts, rules, and regulations.">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <style>
+        /* Global variables */
+        :root {
+            --primary-color: #a52a2a;
+            --secondary-color: #3d3d3d;
+            --font-family: 'Poppins', sans-serif;
+        }
+
+        /* CSS selectors */
+        .section {
+            width: 100%;
+            min-height: 100vh;
+            background-color: #ddd;
+            display: flex;
+        }
+
+        .container {
+            width: 80%;
+            display: block;
+            margin: auto;
+            padding-top: 100px;
+        }
+
+        .content-section {
+            width: 55%;
+        }
+
+        .image-section {
+            width: 45%;
+        }
+
+        .image-section img {
+            margin-bottom: 100px;
+        }
+
+        .content-section .title {
+            color: #d14708;
+            background: -webkit-linear-gradient(left, #f8f7a8, #fdfda0);
+            background: -o-linear-gradient(left, #e4e69d, #f7f7a8);
+            background: -moz-linear-gradient(left, #e9f09d, #f3f3aa);
+            background: linear-gradient(to right, #eef0a1, #f6f6ae);
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            width: 100%;
+            padding: 20px;
+            background-color: #fff;
+            z-index: 1;
+        }
+
+        .content-section .content h3 {
+            margin-top: 20px;
+            color: var(--secondary-color);
+            font-size: 21px;
+        }
+
+        .content-section .content p {
+            margin-top: 10px;
+            font-family: var(--font-family);
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .content-section .content .button {
+            margin-top: 30px;
+        }
+
+        .content-section .content .button a {
+            background-color: var(--primary-color);
+            padding: 12px 40px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 25px;
+            letter-spacing: 1.5px;
+        }
+
+        .content-section .content .button a:hover {
+            background-color: #a52a2a;
+            color: #fff;
+        }
+
+        .content-section .social {
+            margin: 40px 40px;
+        }
+
+        .content-section .social i {
+            color: var(--primary-color);
+            font-size: 30px;
+            padding: 0px 10px;
+        }
+
+        .content-section .social i:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Media queries */
+
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 100%;
+                padding-top: 50px;
+            }
+
+            .content-section {
+                float: none;
+                width: 100%;
+            }
+
+            .image-section {
+                float: none;
+                width: 100%;
+            }
+
+            .image-section img {
+                display: block;
+                margin: auto;
+            }
+
+            .content-section .title {
+                text-align: center;
+                font-size: 19px;
+            }
+
+            .content-section .content .button {
+                text-align: center;
+            }
+
+            .content-section .content .button a {
+                padding: 9px 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section">
+        <div class="container">
+            <div class="content-section">
+                <div class="title">
+                    <h1>About Me</h1>
+                </div>
+            </div>
+            <div class="content">
+                <h3>MINERBOT</h3>
+                <p>The MinerBot is a chatbot that can answer your questions about mining industry acts, rules, and
+                    regulations. It is powered by a large language model that has been trained on a massive dataset of
+                    text and code. The MinerBot is still under development, but it has learned to perform many kinds of
+                    tasks, including:
+                </p>
+                <ul>
+                    <li>Answering questions about mining industry acts, rules, and regulations</li>
+                    <li>Providing information on mining industry best practices</li>
+                    <li>Helping users to find relevant resources on mining industry regulations</li>
+                </ul>
+                <p>The MinerBot is a valuable tool for anyone who works in the mining industry or who is interested in
+                    learning more about mining industry regulations. It is easy to use and can be accessed from anywhere
+                    with an internet connection.
+                </p>
+                <div class='button'>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+            <div class="social">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="https://www.impactbnd.com/hubfs/marketing-chatbot-examples.jpg" width="250px" alt="Chatbot">
+        </div>
+    </div>
+</body>
+
+</html>
